@@ -29,13 +29,14 @@ export default function Home() {
           <Logo />
           <nav className="hidden md:flex items-center gap-8 font-bold text-[10px] tracking-widest uppercase">
             <Link href="#" className="hover:opacity-70 transition-opacity">Whitepaper</Link>
-            <Link href="#" className="hover:opacity-70 transition-opacity">Docs</Link>
+            <Link href="https://docs.polarispay.app" className="hover:opacity-70 transition-opacity">Docs</Link>
+            <Link href="https://merchants.polarispay.app" className="hover:opacity-70 transition-opacity">Merchants</Link>
             <Link href="#" className="hover:opacity-70 transition-opacity">Build</Link>
             <Link href="#" className="hover:opacity-70 transition-opacity">Blog</Link>
             <Link href="#" className="hover:opacity-70 transition-opacity">Join Us</Link>
           </nav>
           <a
-            href="https://app.polaris.network"
+            href="https://app.polarispay.app"
             className="bg-black text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded-full hover:bg-neutral-800 transition-colors"
           >
             Launch App
@@ -58,7 +59,7 @@ export default function Home() {
             </p>
             <div>
               <Link 
-                href="https://app.polaris.network" 
+                href="https://app.polarispay.app" 
                 className="inline-block bg-black text-white font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-neutral-800 hover:scale-105 transition-all"
               >
                 Get Credit
@@ -178,7 +179,7 @@ export default function Home() {
             </div>
             
             <Link 
-              href="https://app.polaris.network" 
+              href="https://app.polarispay.app" 
               className="bg-[#ccff00] text-black font-bold text-xs uppercase tracking-wider px-8 py-4 rounded-full hover:bg-white hover:scale-105 transition-all whitespace-nowrap"
             >
               Get Started
@@ -320,6 +321,86 @@ export default function Home() {
           </div>
         </motion.section>
 
+        {/* FOR MERCHANTS SECTION */}
+        <motion.section 
+          {...fadeInUp}
+          className="bg-zinc-900 border border-zinc-800 rounded-[3rem] p-8 lg:p-16 mt-16 overflow-hidden relative"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10 relative">
+            <div>
+              <span className="text-[#ccff00] text-xs font-bold uppercase tracking-[0.3em] mb-4 block">For Businesses</span>
+              <h2 className="text-4xl lg:text-6xl font-black text-white uppercase tracking-tight leading-[0.9] mb-8">
+                Empower Your<br />Sales with<br />Polaris Merchant.
+              </h2>
+              <ul className="flex flex-col gap-6 mb-10">
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-[#ccff00]/10 border border-[#ccff00]/30 flex items-center justify-center text-[#ccff00] text-xs mt-1">✓</div>
+                  <div>
+                    <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-1">Instant Settlement</h4>
+                    <p className="text-white/60 text-xs">No more 30-day waiting. Funds are settled on-chain instantly after customer confirmation.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-[#ccff00]/10 border border-[#ccff00]/30 flex items-center justify-center text-[#ccff00] text-xs mt-1">✓</div>
+                  <div>
+                    <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-1">Zero Chargebacks</h4>
+                    <p className="text-white/60 text-xs">All payments are pre-collateralized on the protocol, eliminating fraud and chargeback risk.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-[#ccff00]/10 border border-[#ccff00]/30 flex items-center justify-center text-[#ccff00] text-xs mt-1">✓</div>
+                  <div>
+                    <h4 className="font-bold text-white text-sm uppercase tracking-wider mb-1">Global Customer Base</h4>
+                    <p className="text-white/60 text-xs">Accept customers using collateral from any chain, from Polygon to Base to Monad.</p>
+                  </div>
+                </li>
+              </ul>
+              <Link 
+                href="https://merchants.polarispay.app" 
+                className="bg-[#ccff00] text-black font-bold text-xs uppercase tracking-wider px-10 py-5 rounded-full hover:bg-white hover:scale-105 transition-all inline-block"
+              >
+                Go To Merchant Portal
+              </Link>
+            </div>
+
+            <div className="relative">
+              {/* Merchant Dashboard Interface Mockup */}
+              <div className="bg-black rounded-2xl border border-white/5 p-6 shadow-2xl relative">
+                  <div className="flex items-center justify-between mb-8">
+                    <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest">Store Revenue</span>
+                    <div className="flex gap-2">
+                       <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                       <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                       <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    </div>
+                  </div>
+                  <div className="text-5xl font-black text-white tracking-tighter mb-8">$142,504<span className="text-[#ccff00] text-sm opacity-60 ml-2">.20</span></div>
+                  
+                  <div className="space-y-4">
+                     {[1,2,3].map((item) => (
+                       <div key={item} className="p-4 bg-zinc-900/50 rounded-xl flex items-center justify-between border border-white/5">
+                          <div className="flex items-center gap-4">
+                             <div className="w-10 h-10 rounded bg-[#ccff00]/10 border border-[#ccff00]/20 flex items-center justify-center text-[#ccff00]">🛒</div>
+                             <div>
+                                <div className="text-xs font-bold text-white uppercase tracking-wide">Sale #{1028 + item}</div>
+                                <div className="text-[10px] text-white/40 font-medium">Pending Settlement</div>
+                             </div>
+                          </div>
+                          <div className="text-right">
+                             <div className="text-xs font-bold text-white">$1,250.00</div>
+                             <div className="text-[8px] text-[#ccff00] font-bold uppercase">USDC</div>
+                          </div>
+                       </div>
+                     ))}
+                  </div>
+              </div>
+              {/* Decorative elements */}
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#ccff00] rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-500 rounded-full blur-[120px] opacity-10 pointer-events-none"></div>
+            </div>
+          </div>
+        </motion.section>
+
         {/* Join Community */}
         <motion.section 
           {...fadeInUp}
@@ -330,7 +411,7 @@ export default function Home() {
             For The Latest Updates
           </h2>
           <a
-            href="https://t.me/polarisnetwork"
+            href="https://t.me/polarispay"
             className="bg-[#ccff00] text-black font-bold text-sm uppercase tracking-wider px-10 py-5 rounded-full hover:bg-white hover:scale-105 transition-all flex items-center gap-3"
           >
             <svg viewBox="0 0 24 24" className="w-5 h-5 fill-current"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.54-.36-.63-.2-1.12-.31-1.08-.65.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.28-.01.07.01.19 0 .33z"/></svg>
@@ -376,7 +457,7 @@ export default function Home() {
         <div className="flex gap-4 text-[10px] text-white/40 uppercase tracking-widest font-bold">
           <span>© 2026 POLARIS</span>
           <Link href="/privacy" className="hover:text-white transition-colors">Privacy Note</Link>
-          <Link href="/docs" className="hover:text-white transition-colors">Docs</Link>
+          <Link href="https://docs.polarispay.app" className="hover:text-white transition-colors">Docs</Link>
         </div>
       </footer>
     </div>
