@@ -52,10 +52,10 @@ export default function Home() {
             className="flex flex-col gap-8"
           >
             <h1 className="text-5xl lg:text-7xl font-black leading-[0.9] tracking-tight uppercase">
-              Cross-Chain<br />Buy Now,<br />Pay Later.
+              Confidential<br />Buy Now,<br />Pay Later.
             </h1>
             <p className="text-sm lg:text-base font-medium max-w-md leading-relaxed">
-              Leverage collateral on any chain to instantly access credit everywhere. Polaris empowers your purchases across the multi-chain ecosystem.
+              Leverage your on-chain assets to instantly access private credit everywhere. Polaris empowers your purchases with full privacy via Zama fHEVM.
             </p>
             <div>
               <Link 
@@ -68,8 +68,8 @@ export default function Home() {
             
             <div className="flex items-center gap-12 mt-8 pt-8 border-t border-black/10">
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-1">Supported Chains</p>
-                <div className="text-3xl font-black">4+</div>
+                <p className="text-[10px] font-bold uppercase tracking-widest mb-1">Privacy Guarantee</p>
+                <div className="text-3xl font-black">100%</div>
               </div>
               <div className="w-px h-12 bg-black/10"></div>
               <div>
@@ -142,15 +142,12 @@ export default function Home() {
         
         {/* Partners */}
         <div className="flex flex-wrap justify-center gap-12 lg:gap-24 items-center opacity-60 grayscale pb-10">
-          <span className="font-bold text-2xl tracking-tighter">Chainlink CCIP</span>
+          <span className="font-bold text-2xl tracking-tighter">Zama fHEVM</span>
           <span className="font-bold text-2xl tracking-tighter flex items-center gap-2">
             <div className="w-4 h-4 bg-white rounded-full"></div>Reclaim
           </span>
-          <span className="font-bold text-2xl tracking-tighter">Avalanche</span>
-          <span className="font-bold text-2xl tracking-tighter flex items-center gap-2">
-            <div className="w-3 h-4 bg-white rounded-t-full"></div>Monad
-          </span>
-          <span className="font-bold text-2xl tracking-tighter">Supabase</span>
+          <span className="font-bold text-2xl tracking-tighter">Base</span>
+          <span className="font-bold text-2xl tracking-tighter">Ethereum</span>
         </div>
 
         {/* Introducing Banner */}
@@ -174,7 +171,7 @@ export default function Home() {
             <div className="flex-1 text-center md:text-left">
               <h2 className="text-xl lg:text-3xl font-bold text-white uppercase tracking-tight">
                 <span className="text-[#ccff00]">Introducing Polaris:</span><br/>
-                Unifying Cross-Chain Credit
+                Confidential Buy Now, Pay Later on Zama
               </h2>
             </div>
             
@@ -193,9 +190,9 @@ export default function Home() {
           className="bg-[#85A1FF] text-black rounded-2xl p-8 lg:p-10 flex flex-col md:flex-row items-center justify-between gap-8"
         >
           <div className="max-w-xl">
-            <h2 className="text-3xl lg:text-4xl font-black mb-4 tracking-tighter uppercase">Powered By Chainlink CCIP</h2>
+            <h2 className="text-3xl lg:text-4xl font-black mb-4 tracking-tighter uppercase">Powered By Zama fHEVM</h2>
             <p className="font-medium text-sm leading-relaxed opacity-80">
-              Secure, reliable cross-chain messaging enables seamless collateral management and credit tracking across the multi-chain ecosystem.
+              Secure, confidential on-chain computation enables seamless credit management and private payment tracking across the ecosystem.
             </p>
           </div>
           <div className="font-black text-xl italic opacity-90 flex flex-col items-center">
@@ -205,7 +202,7 @@ export default function Home() {
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
               </div>
             </div>
-            Chainlink
+            Zama
           </div>
         </motion.section>
 
@@ -218,9 +215,9 @@ export default function Home() {
             className="bg-[#5EF1A0] text-black rounded-3xl p-8 lg:p-12 flex flex-col justify-between overflow-hidden relative min-h-[440px] md:min-h-[600px] md:row-span-2"
           >
             <div className="z-10 max-w-sm mb-12">
-              <h3 className="text-3xl lg:text-5xl font-black uppercase tracking-tight leading-[0.9] mb-4">Any Chain<br/>Collateral</h3>
+              <h3 className="text-3xl lg:text-5xl font-black uppercase tracking-tight leading-[0.9] mb-4">Confidential<br/>Credit</h3>
               <p className="font-medium text-sm lg:text-base opacity-80 leading-relaxed">
-                Deposit your assets into Satellite Vaults on Polygon, Monad, or Base. Polaris securely tracks your collateral via CCIP to unlock global credit.
+                Deposit your assets into Polaris Vaults. Polaris securely tracks your credit worthiness via fHEVM to unlock private BNPL everywhere.
               </p>
             </div>
             
@@ -267,7 +264,7 @@ export default function Home() {
             <div className="z-10 max-w-sm mb-8 relative">
               <h3 className="text-3xl lg:text-4xl font-black uppercase tracking-tight leading-[0.9] mb-4">One-Click<br/>Checkout</h3>
               <p className="font-medium text-sm opacity-80 leading-relaxed">
-                Seamless merchant integrations allow you to Buy Now and Pay Later with a single signed transaction, no matter where your collateral lives.
+                Seamless merchant integrations allow you to Buy Now and Pay Later with a single confidential transaction, no matter where you are.
               </p>
             </div>
             {/* Graphics mock: overlapping circles */}
@@ -308,7 +305,7 @@ export default function Home() {
                 ))}
              </div>
              {/* Center YO */}
-             <div className="absolute text-5xl font-black text-[#ccff00] tracking-tighter">OBO</div>
+             <div className="absolute text-5xl font-black text-[#ccff00] tracking-tighter">POLARIS</div>
           </div>
 
           <div className="max-w-md text-center lg:text-left z-10">
