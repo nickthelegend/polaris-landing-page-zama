@@ -1,40 +1,38 @@
-# Polaris Landing Page 🌌
+# 🌌 Polaris Landing Page
 
-Welcome to the **Polaris Landing Page** repository! This is the public-facing promotional website for **Polaris**, a decentralized Cross-Chain Buy Now Pay Later (BNPL) protocol. 
+The **Polaris Landing Page** is the public-facing promotional website for the **Polaris Protocol**. It introduces the project's vision of decentralized, cross-chain credit and the power of FHEVM-based privacy.
 
-The landing page introduces the protocol to users and merchants, explaining how they can leverage assets across multiple chains as collateral for instant BNPL payments.
+## 🚀 Project Vision
+Polaris enables decentralized credit by utilizing cross-chain messaging and collateral management. Users can leverage their existing crypto assets on one chain to secure credit or make payments on another, ensuring instant settlements for merchants and flexible options for customers.
 
-## 🚀 Tech Stack
-This project is built with a modern frontend stack to ensure a fast, responsive, and beautiful user experience:
+## 🛠️ Tech Stack
 - **Framework**: [Next.js](https://nextjs.org/) (App Router)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) for premium interactions.
 - **Typography**: [Geist Font](https://vercel.com/font)
+- **Aesthetics**: Premium dark-mode with glassmorphism and smooth transitions.
 
-## 🛠️ Getting Started
+---
 
-### Prerequisites
-Make sure you have Node.js installed. We recommend using `npm` or `pnpm` for managing dependencies.
+## 🚀 Getting Started
 
-### Installation & Running Locally
-
-1. Install the dependencies:
+### Installation
 ```bash
 npm install
 ```
 
-2. Start the development server:
+### Development
 ```bash
 npm run dev
 ```
+Navigate to [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-3. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the landing page.
+---
 
-## 📁 Project Structure
-- `app/`: Next.js App Router files, including the main `page.tsx`.
-- `public/`: Static assets like images and icons.
+## 📁 Structure
+- `app/`: Next.js core application files.
+- `public/`: Static assets, brand logos, and marketing images.
+- `components/`: Modular marketing components (Hero, Features, Roadmap, FAQ).
 
-## 🌍 About Polaris
-Polaris enables decentralized credit by utilizing Chainlink CCIP to pass messages between Satellite Chains (where collateral is locked) and the Master Chain (where credit and debt are managed).
-
-For the actual decentralized application and user dashboard, please see the [`polaris-network`](../polaris-network) project within this workspace.
+## 🌍 The Polaris Ecosystem
+For the protocol's core logic and user dashboard, check the [`polaris-core`](../polaris-core) and [`polaris-protocol`](../polaris-protocol) repositories.
